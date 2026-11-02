@@ -136,7 +136,7 @@ export interface GameState {
   kompromat: Kompromat[];
   lastLawDate: string | null;
   lobby: Partial<Record<PartyId, number>>;
-  log: { date: string; text: string; tone?: "good" | "bad" | "info" }[];
+  log: { date: string; text: string; tone?: "good" | "bad" | "info" | undefined }[];
   gameOver: string | null;
   lastElection: Record<PartyId, number> | null;
 }
